@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-2時間割</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>現在時刻</h2>
+            <div id="datetime" style="font-size: 2em; font-weight: bold;"></div>
+            <h2>現在とその後の授業</h2>
+            <div id="nowSubject" class="subject"></div>
+            <div id="nextSubject" class="subject"></div>
+        </div>
+        <div class="right">
+            <h2>時間割</h2>
+            <div id="timetable" class="timetable"></div>
+            <h3>時間割の選択</h3>
+            <div class="selectbox-parent">
+                理科選択:
+                <label class="scienceChoice selectbox-common">
+                    <select name="scienceChoice" id="scienceChoice">
+                        <option value="sccGeo">地学</option>
+                        <option value="sccBio">生物</option>
+                    </select>
+                </label>
+            </div>
+            <div class="selectbox-parent">
+            芸術選択:
+            <label class="socialChoice selectbox-common">
+                <select name="socialChoice" id="socialChoice">
+                    <option value="arcPia">ピアノ</option>
+                    <option value="arcSng">歌唱</option>
+                    <option value="arcCft">工芸</option>
+                    <option value="arcGtr">ギター</option>
+                    <option value="arcCal">書道</option>
+                    <option value="arcCmp">作曲</option>
+                    <option value="arcArt">美術</option>
+                </select>
+            </label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
