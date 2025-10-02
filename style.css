@@ -58,7 +58,7 @@ body {
         flex-direction: column; /* 上下に並べる */
     }
     .left {
-        height: 50%;
+        height: 60%;
         padding: 15px;
     }
     .right {
