@@ -136,7 +136,7 @@ body {
     padding: 4px 6px;       /* 内側余白を小さめに */
     text-align: center;
     width: calc(100% / 6); /* 6列なら均等割り */
-    height: 44px;           /* ← 縦幅を小さく統一 */
+    height: 40px;           /* ← 縦幅を小さく統一 */
     line-height: 1.2;       /* 行間を狭くする */
     vertical-align: middle; /* 上下中央揃え */
     word-wrap: break-word;  /* 内容が長いとき折り返す */
