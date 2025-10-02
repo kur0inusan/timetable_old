@@ -59,9 +59,11 @@ body {
     }
     .left {
         height: 50%;
+        padding: 15px;
     }
     .right {
         height: 50%;
+        padding: 15px;
     }
 }
 
