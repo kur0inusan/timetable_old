@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1-2時間割</title>
+    <title>時間割</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&family=Zen+Maru+Gothic:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="left">
-            <h2>現在時刻</h2>
-            <div id="datetime" style="font-size: 1.8em; font-weight: bold;"></div>
+            <div id="date" class="m-plus-rounded-1c-regular"></div>
+            <div id="time" class="m-plus-rounded-1c-extrabold"></div>
             <h2>今と次の授業</h2>
             <div id="nowSubject" class="subject"></div>
             <div id="nextSubject" class="subject"></div>
@@ -21,31 +26,36 @@
         <div class="right">
             <h2>時間割</h2>
             <div id="timetable" class="timetable"></div>
-            <h3>時間割の選択</h3>
-            <div class="selectbox-parent">
-                理科選択:
-                <label class="scienceChoice selectbox-common">
-                    <select name="scienceChoice" id="scienceChoice">
-                        <option value="sccGeo">地学</option>
-                        <option value="sccBio">生物</option>
-                    </select>
-                </label>
-            </div>
-            <div class="selectbox-parent">
-            芸術選択:
-            <label class="socialChoice selectbox-common">
-                <select name="socialChoice" id="socialChoice">
-                    <option value="arcPia">ピアノ</option>
-                    <option value="arcSng">歌唱</option>
-                    <option value="arcCft">工芸</option>
-                    <option value="arcGtr">ギター</option>
-                    <option value="arcCal">書道</option>
-                    <option value="arcCmp">作曲</option>
-                    <option value="arcArt">美術</option>
-                </select>
-            </label>
+            <div hidden>
+                <h3>時間割の選択</h3>
+                <div class="selectbox-parent">
+                    理科選択:
+                    <label class="scienceChoice selectbox-common">
+                        <select name="scienceChoice" id="scienceChoice">
+                            <option value="sccGeo">地学</option>
+                            <option value="sccBio">生物</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="selectbox-parent">
+                    芸術選択:
+                    <label class="socialChoice selectbox-common">
+                        <select name="socialChoice" id="socialChoice">
+                            <option value="arcPia">ピアノ</option>
+                            <option value="arcSng">歌唱</option>
+                            <option value="arcCft">工芸</option>
+                            <option value="arcGtr">ギター</option>
+                            <option value="arcCal">書道</option>
+                            <option value="arcCmp">作曲</option>
+                            <option value="arcArt">美術</option>
+                        </select>
+                    </label>
+                </div>
             </div>
         </div>
+    </div>
+    <div id="setting-button">
+        <img width="50" height="50" src="https://img.icons8.com/ios/50/settings--v1.png" alt="settings--v1"/>
     </div>
     <script src="script.js"></script>
 </body>

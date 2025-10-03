@@ -2,18 +2,19 @@
 function updateDateTime() {
     const now = new Date();
 
-    const year = now.getFullYear();
     const month = String(now.getMonth() + 1).padStart(2, '0'); // 月は0始まりなので+1
     const day = String(now.getDate()).padStart(2, '0');
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-    const days = ['日', '月', '火', '水', '木', '金', '土'];
+    const days = ['Sat', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const weekDay = days[now.getDay()];
 
-    const dateTimeString = `${year}/${month}/${day}(${weekDay}) ${hours}:${minutes}:${seconds}`;
+    const dateString = `${month}/${day} ${weekDay}`;
+    const timeString = `${hours}:${minutes}:${seconds}`;
 
-    document.getElementById('datetime').textContent = dateTimeString;
+    document.getElementById('date').textContent = dateString;
+    document.getElementById('time').textContent = timeString;
 };
 
 //各曜日の時間データ
@@ -280,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 行作成
     const tbody = document.createElement('tbody');
-    for (let period = 0; period < 7; period++) {
+    for (let period = 0; period < 6; period++) {
         const row = document.createElement('tr');
 
         dayKeys.forEach((dayKey, index) => {
