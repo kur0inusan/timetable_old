@@ -1,4 +1,4 @@
-//現在時刻の表示
+// 現在時刻の表示
 function updateDateTime() {
     const now = new Date();
 
@@ -468,3 +468,17 @@ function UpdateText() {
 //繰り返し実行
 setInterval(updateDateTime, 1000);
 setInterval(UpdateText, 10000);
+
+$("#setting-button").on("click", function () {
+    $("#settings").fadeIn();
+});
+
+$("#close-button").on("click", function () {
+    $("#settings").fadeOut();
+});
+
+$(document).on("click", function (event) {
+    if (!$(event.target).closest("#settings, #setting-button").length) {
+        $("#settings").fadeOut();
+    }
+});
