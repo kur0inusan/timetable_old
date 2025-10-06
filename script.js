@@ -106,7 +106,7 @@ let timetable = {
         { subject: "地理", teacher: "阿部" },
         { subject: "英語2", teacher: "平田" },
         { subject: "保健", teacher: "青木" },
-        { subject: "英語", teacher: "Stewart" },
+        { subject: "英語", teacher: "Mr.S" },
         { subject: "情報", teacher: "喜古" },
         { subject: "数学β", teacher: "木部" },
         { subject: "", teacher: "" }

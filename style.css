@@ -5,67 +5,136 @@ body {
     background-color: #eafdff;
     color: black;
     background: linear-gradient(135deg, #ffafcc, #e2c8f1, #acd3f7, #bde0fe);
-    background-size: 200% 200%; /* グラデーションのサイズを大きく設定 */
+    background-size: 200% 200%;
+    /* グラデーションのサイズを大きく設定 */
     animation: Grad 10s infinite alternate;
 }
 
 @keyframes Grad {
     0% {
-        background-position: 0% 50%; /* 初期位置 */
+        background-position: 0% 50%;
+        /* 初期位置 */
     }
+
     50% {
-        background-position: 100% 50%; /* 中間位置 */
+        background-position: 100% 50%;
+        /* 中間位置 */
     }
+
     100% {
-        background-position: 0% 50%; /* 終了位置 */
+        background-position: 0% 50%;
+        /* 終了位置 */
     }
 }
 
 @media screen and (orientation: portrait) {
     .container {
-        width: 85%; /* 縦長の場合は幅を広げる */
+        width: 80%;
+        /* 縦長の場合は幅を広げる */
         margin: 20px auto;
         padding: 15px;
+    }
+
+    #date {
+        font-size: 1.5em;
+    }
+
+    #time {
+        font-size: 3em;
+    }
+
+    .subject {
+        font-size: 2em;
+    }
+
+    #setting-button {
+        position: absolute;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.65);
+        top: 15px;
+        right: 15px;
+        transform: scale(0.6);
+    }
+
+    #setting-button:hover {
+        transform: scale(0.7);
+    }
+
+    .modal-window {
+        width: 80%;
+        max-width: 400px;
     }
 }
 
 @media screen and (orientation: landscape) {
     body {
-        display: flex; /* フレックスボックスを有効化 */
-        justify-content: center; /* 水平方向に中央揃え */
-        align-items: center; /* 垂直方向に中央揃え */
-        height: 100vh; /* ビューポート全体の高さを確保 */
+        display: flex;
+        /* フレックスボックスを有効化 */
+        justify-content: center;
+        /* 水平方向に中央揃え */
+        align-items: center;
+        /* 垂直方向に中央揃え */
+        height: 100vh;
+        /* ビューポート全体の高さを確保 */
     }
+
     .container {
         padding: 40px;
         width: 50%;
         margin: 20px auto;
         display: flex;
-        border-radius: 20px;
     }
-    .left, .right {
+
+    .left,
+    .right {
         flex: 1;
         margin: 0 10px;
+    }
+
+    #date {
+        font-size: 2em;
+    }
+
+    #time {
+        font-size: 4em;
+    }
+
+    .subject {
+        font-size: 2.3em;
+    }
+
+    #setting-button {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.3);
+        bottom: 20px;
+        left: 20px;
+        transform: scale(1.0);
+    }
+
+    #setting-button:hover {
+        transform: scale(1.1);
     }
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
-#date, #time {
+#date,
+#time {
     text-align: center;
 }
+
 #date {
-    font-size: 2em;
     text-align: left;
 }
 
 #time {
-    font-size: 4em;
     margin-top: 5px;
 }
+
 .right {
     display: flex;
     flex-direction: column;
@@ -73,66 +142,90 @@ body {
 }
 
 .m-plus-rounded-1c-regular {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .m-plus-rounded-1c-extrabold {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, div {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .subject {
-    font-size: 2.5em;
     margin: 10px 0;
     padding: 10px;
 }
 
 .timetable thead th {
-    height: 30px;      /* ← 好きな高さに調整 */
-    padding: 2px 6px;  /* ← 内側余白も少し小さめ */
-    font-size: 0.9em; /* ← 字はほんの少し大きめに見せたいなら */
-    border: 2px solid #353535; /* 太めの枠線 */
+    height: 30px;
+    /* ← 好きな高さに調整 */
+    padding: 2px 6px;
+    /* ← 内側余白も少し小さめ */
+    font-size: 0.9em;
+    /* ← 字はほんの少し大きめに見せたいなら */
+    border: 2px solid #353535;
+    /* 太めの枠線 */
 }
 
 .timetable td {
-    border: 2px solid #353535; /* 太めの枠線 */
-    padding: 4px 6px;       /* 内側余白を小さめに */
+    border: 2px solid #353535;
+    /* 太めの枠線 */
+    padding: 4px 6px;
+    /* 内側余白を小さめに */
     text-align: center;
-    width: calc(100% / 6); /* 6列なら均等割り */
-    height: 40px;           /* ← 縦幅を小さく統一 */
-    line-height: 1.2;       /* 行間を狭くする */
-    vertical-align: middle; /* 上下中央揃え */
-    word-wrap: break-word;  /* 内容が長いとき折り返す */
-    font-size: 0.9em;       /* 文字をやや小さめに */
+    width: calc(100% / 6);
+    /* 6列なら均等割り */
+    height: 40px;
+    /* ← 縦幅を小さく統一 */
+    line-height: 1.2;
+    /* 行間を狭くする */
+    vertical-align: middle;
+    /* 上下中央揃え */
+    word-wrap: break-word;
+    /* 内容が長いとき折り返す */
+    font-size: 0.9em;
+    /* 文字をやや小さめに */
 }
 
 .timetable table {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
-    overflow: hidden; /* 角丸を適用するために必要 */
-    border: 2px solid #353535; /* テーブル全体の枠線 */
+    overflow: hidden;
+    /* 角丸を適用するために必要 */
+    border: 2px solid #353535;
+    /* テーブル全体の枠線 */
 }
 
 /* 最初と最後のセルの角を丸くする */
 .timetable tr:first-child th:first-child {
     border-top-left-radius: 8px;
 }
+
 .timetable tr:first-child th:last-child {
     border-top-right-radius: 8px;
 }
+
 .timetable tr:last-child td:first-child {
     border-bottom-left-radius: 8px;
 }
+
 .timetable tr:last-child td:last-child {
     border-bottom-right-radius: 8px;
 }
@@ -146,7 +239,7 @@ body, h1, h2, h3, h4, h5, h6, p, div {
     border: 1.5px solid #888;
     border-radius: 6px;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* 三角アイコン */
@@ -184,10 +277,6 @@ body, h1, h2, h3, h4, h5, h6, p, div {
 }
 
 #setting-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
     z-index: 1000;
     padding: 10px;
@@ -196,14 +285,13 @@ body, h1, h2, h3, h4, h5, h6, p, div {
     justify-content: center;
     align-items: center;
     border: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 #setting-button:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .modal-window {
@@ -214,7 +302,7 @@ body, h1, h2, h3, h4, h5, h6, p, div {
     background-color: rgba(255, 255, 255, 0.966);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1001;
     display: none;
 }
