@@ -32,7 +32,8 @@ body {
         width: 80%;
         /* 縦長の場合は幅を広げる */
         margin: 20px auto;
-        padding: 15px;
+        padding: 25px;
+        padding-top: 15px;
     }
 
     #date {
