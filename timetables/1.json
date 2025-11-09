@@ -1,0 +1,50 @@
+{
+    "mon": [
+        { "subject": "物理", "teacher": "深町" },
+        { "subject": "数学α", "teacher": "松野" },
+        { "subject": "古文", "teacher": "矢口" },
+        { "subject": "日本史", "teacher": "石附" },
+        { "subject": "古文", "teacher": "矢口" },
+        { "subject": "数学β", "teacher": "木部" }
+    ],
+    "tue": [
+        { "subject": "世界史", "teacher": "村島" },
+        { "subject": "古文", "teacher": "矢口" },
+        { "subject": "理科選択", "teacher": "" },
+        { "subject": "英語2", "teacher": "平田" },
+        { "subject": "漢文", "teacher": "水谷" },
+        { "subject": "数学α", "teacher": "松野" }
+    ],
+    "wed": [
+        { "subject": "化学", "teacher": "小松" },
+        { "subject": "数学α", "teacher": "松野" },
+        { "subject": "数学β", "teacher": "木部" },
+        { "subject": "情報", "teacher": "喜古" },
+        { "subject": "英語1", "teacher": "庄司" },
+        { "subject": "理科選択", "teacher": "" }
+    ],
+    "thu": [
+        { "subject": "地理", "teacher": "阿部" },
+        { "subject": "英語2", "teacher": "平田" },
+        { "subject": "保健", "teacher": "青木" },
+        { "subject": "英語", "teacher": "Mr.S" },
+        { "subject": "情報", "teacher": "喜古" },
+        { "subject": "数学β", "teacher": "木部" }
+    ],
+    "fri": [
+        { "subject": "世界史", "teacher": "村島" },
+        { "subject": "日本史", "teacher": "石附" },
+        { "subject": "体育", "teacher": "髙橋正" },
+        { "subject": "化学", "teacher": "小松" },
+        { "subject": "英語", "teacher": "熊野" },
+        { "subject": "現代文", "teacher": "福島" }
+    ],
+    "sat": [
+        { "subject": "地理", "teacher": "阿部" },
+        { "subject": "物理", "teacher": "深町" },
+        { "subject": "体育", "teacher": "髙橋正" },
+        { "subject": "英語1", "teacher": "庄司" },
+        { "subject": "", "teacher": "" },
+        { "subject": "", "teacher": "" }
+    ]
+}

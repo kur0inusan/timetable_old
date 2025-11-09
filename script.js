@@ -1,4 +1,105 @@
-// 現在時刻の表示
+const schedules = {
+    1: [ // 月曜日
+        { start: 490, id: 'mon-1' },
+        { start: 550, id: 'mon-2' },
+        { start: 610, id: 'mon-3' },
+        { start: 670, id: 'mon-4' },
+        { start: 760, id: 'mon-5' },
+        { start: 820, id: 'mon-6' },
+    ],
+    2: [ // 火曜日
+        { start: 490, id: 'tue-1' },
+        { start: 550, id: 'tue-2' },
+        { start: 610, id: 'tue-3' },
+        { start: 670, id: 'tue-4' },
+        { start: 760, id: 'tue-5' },
+        { start: 820, id: 'tue-6' },
+    ],
+    3: [ // 水曜日
+        { start: 490, id: 'wed-1' },
+        { start: 550, id: 'wed-2' },
+        { start: 610, id: 'wed-3' },
+        { start: 670, id: 'wed-hr' },
+        { start: 700, id: 'wed-4' },
+        { start: 790, id: 'wed-5' },
+        { start: 850, id: 'wed-6' },
+    ],
+    4: [ // 木曜日
+        { start: 490, id: 'thu-1' },
+        { start: 550, id: 'thu-2' },
+        { start: 610, id: 'thu-3' },
+        { start: 670, id: 'thu-4' },
+        { start: 760, id: 'thu-5' },
+        { start: 820, id: 'thu-6' },
+    ],
+    5: [ // 金曜日
+        { start: 490, id: 'fri-1' },
+        { start: 550, id: 'fri-2' },
+        { start: 610, id: 'fri-3' },
+        { start: 670, id: 'fri-4' },
+        { start: 760, id: 'fri-5' },
+        { start: 820, id: 'fri-6' },
+    ],
+    6: [ // 土曜日
+        { start: 490, id: 'sat-1' },
+        { start: 550, id: 'sat-2' },
+        { start: 610, id: 'sat-3' },
+        { start: 670, id: 'sat-4' },
+    ]
+};
+
+let timetable = {
+    mon: [
+        { subject: "数学α", teacher: "松野" },
+        { subject: "物理", teacher: "深町" },
+        { subject: "現代文", teacher: "福島" },
+        { subject: "日本史", teacher: "石附" },
+        { subject: "古文", teacher: "矢口" },
+        { subject: "数学β", teacher: "木部" },
+    ],
+    tue: [
+        { subject: "世界史", teacher: "村島" },
+        { subject: "古文", teacher: "矢口" },
+        { subject: "地学", teacher: "石川" },
+        { subject: "英語2", teacher: "平田" },
+        { subject: "漢文", teacher: "水谷" },
+        { subject: "数学α", teacher: "松野" },
+    ],
+    wed: [
+        { subject: "化学", teacher: "小松" },
+        { subject: "数学α", teacher: "松野" },
+        { subject: "数学β", teacher: "木部" },
+        { subject: "情報", teacher: "喜古" },
+        { subject: "英語1", teacher: "庄司" },
+        { subject: "地学", teacher: "石川" },
+    ],
+    thu: [
+        { subject: "地理", teacher: "阿部" },
+        { subject: "英語2", teacher: "平田" },
+        { subject: "保健", teacher: "青木" },
+        { subject: "英語", teacher: "Mr.S" },
+        { subject: "情報", teacher: "喜古" },
+        { subject: "数学β", teacher: "木部" },
+    ],
+    fri: [
+        { subject: "世界史", teacher: "村島" },
+        { subject: "日本史", teacher: "石附" },
+        { subject: "体育", teacher: "髙橋正" },
+        { subject: "化学", teacher: "小松" },
+        { subject: "英語", teacher: "熊野" },
+        { subject: "現代文", teacher: "福島" },
+    ],
+    sat: [
+        { subject: "地理", teacher: "阿部" },
+        { subject: "物理", teacher: "深町" },
+        { subject: "体育", teacher: "髙橋正" },
+        { subject: "英語1", teacher: "庄司" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+    ]
+};
+
+
 function updateDateTime() {
     const now = new Date();
 
@@ -17,226 +118,35 @@ function updateDateTime() {
     document.getElementById('time').textContent = timeString;
 };
 
-//各曜日の時間データ
-const schedules = {
-    1: [ // 月曜日
-        { start: 490, id: 'mon-1' },
-        { start: 550, id: 'mon-2' },
-        { start: 610, id: 'mon-3' },
-        { start: 670, id: 'mon-4' },
-        { start: 760, id: 'mon-5' },
-        { start: 820, id: 'mon-6' },
-        { start: 880, id: 'mon-7' }
-    ],
-    2: [ // 火曜日
-        { start: 490, id: 'tue-1' },
-        { start: 550, id: 'tue-2' },
-        { start: 610, id: 'tue-3' },
-        { start: 670, id: 'tue-4' },
-        { start: 760, id: 'tue-5' },
-        { start: 820, id: 'tue-6' },
-        { start: 880, id: 'tue-7' }
-    ],
-    3: [ // 水曜日
-        { start: 490, id: 'wed-1' },
-        { start: 550, id: 'wed-2' },
-        { start: 610, id: 'wed-3' },
-        { start: 670, id: 'wed-hr' },
-        { start: 700, id: 'wed-4' },
-        { start: 790, id: 'wed-5' },
-        { start: 850, id: 'wed-6' },
-        { start: 910, id: 'wed-7' }
-    ],
-    4: [ // 木曜日
-        { start: 490, id: 'thu-1' },
-        { start: 550, id: 'thu-2' },
-        { start: 610, id: 'thu-3' },
-        { start: 670, id: 'thu-4' },
-        { start: 760, id: 'thu-5' },
-        { start: 820, id: 'thu-6' },
-        { start: 880, id: 'thu-7' }
-    ],
-    5: [ // 金曜日
-        { start: 490, id: 'fri-1' },
-        { start: 550, id: 'fri-2' },
-        { start: 610, id: 'fri-3' },
-        { start: 670, id: 'fri-4' },
-        { start: 760, id: 'fri-5' },
-        { start: 820, id: 'fri-6' },
-        { start: 880, id: 'fri-7' }
-    ],
-    6: [ // 土曜日
-        { start: 490, id: 'sat-1' },
-        { start: 550, id: 'sat-2' },
-        { start: 610, id: 'sat-3' },
-        { start: 670, id: 'sat-4' },
-    ]
-};
-
-//各曜日の時間割データ
-let timetable = {
-    mon: [
-        { subject: "数学α", teacher: "松野" },
-        { subject: "物理", teacher: "深町" },
-        { subject: "現代文", teacher: "福島" },
-        { subject: "日本史", teacher: "石附" },
-        { subject: "古文", teacher: "矢口" },
-        { subject: "数学β", teacher: "木部" },
-        { subject: "", teacher: "" }
-    ],
-    tue: [
-        { subject: "世界史", teacher: "村島" },
-        { subject: "古文", teacher: "矢口" },
-        { subject: "地学", teacher: "石川" },
-        { subject: "英語2", teacher: "平田" },
-        { subject: "漢文", teacher: "水谷" },
-        { subject: "数学α", teacher: "松野" },
-        { subject: "", teacher: "" }
-    ],
-    wed: [
-        { subject: "化学", teacher: "小松" },
-        { subject: "数学α", teacher: "松野" },
-        { subject: "数学β", teacher: "木部" },
-        { subject: "情報", teacher: "喜古" },
-        { subject: "英語1", teacher: "庄司" },
-        { subject: "地学", teacher: "石川" },
-        { subject: "", teacher: "" }
-    ],
-    thu: [
-        { subject: "地理", teacher: "阿部" },
-        { subject: "英語2", teacher: "平田" },
-        { subject: "保健", teacher: "青木" },
-        { subject: "英語", teacher: "Mr.S" },
-        { subject: "情報", teacher: "喜古" },
-        { subject: "数学β", teacher: "木部" },
-        { subject: "", teacher: "" }
-    ],
-    fri: [
-        { subject: "世界史", teacher: "村島" },
-        { subject: "日本史", teacher: "石附" },
-        { subject: "体育", teacher: "髙橋正" },
-        { subject: "化学", teacher: "小松" },
-        { subject: "英語", teacher: "熊野" },
-        { subject: "現代文", teacher: "福島" },
-        { subject: "", teacher: "" }
-    ],
-    sat: [
-        { subject: "地理", teacher: "阿部" },
-        { subject: "物理", teacher: "深町" },
-        { subject: "体育", teacher: "髙橋正" },
-        { subject: "英語1", teacher: "庄司" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" }
-    ]
-};
-
-
-//ゲイの曜日
-let gay;
-
-//選択によって授業を変更
-function changeTimetable() {
-    let scienceChoice = localStorage.getItem("scienceChoice");
-    let socialChoice = localStorage.getItem("socialChoice");
-    if (scienceChoice === "sccBio"){
-        timetable.tue[2]={subject:"生物",teacher:"山内"};
-        timetable.wed[5]={subject:"生物",teacher:"山内"};
-    }else if(scienceChoice === "sccGeo"){
-        timetable.tue[2]={subject:"地学",teacher:"石川"};
-        timetable.wed[5]={subject:"地学",teacher:"石川"};
-    };
-    if (socialChoice === "arcPia"){
-        timetable.mon[6]={subject:"ピアノ",teacher:"高木"};
-        timetable.tue[6]={subject:"",teacher:""};
-        timetable.wed[6]={subject:"",teacher:""};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"",teacher:""};
-        gay=1;
-    }else if (socialChoice === "arcSng"){
-        timetable.mon[6]={subject:"",teacher:""};
-        timetable.tue[6]={subject:"歌唱",teacher:"小松崎"};
-        timetable.wed[6]={subject:"",teacher:""};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"",teacher:""};
-        gay=2;
-    }else if (socialChoice === "arcCft"){
-        timetable.mon[6]={subject:"",teacher:""};
-        timetable.tue[6]={subject:"工芸",teacher:"前"};
-        timetable.wed[6]={subject:"",teacher:""};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"",teacher:""};
-        gay=2;
-    }else if (socialChoice === "arcGtr"){
-        timetable.mon[6]={subject:"",teacher:""};
-        timetable.tue[6]={subject:"",teacher:""};
-        timetable.wed[6]={subject:"ギター",teacher:"岡本"};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"",teacher:""};
-        gay=3;
-    }else if (socialChoice === "arcCal"){
-        timetable.mon[6]={subject:"",teacher:""};
-        timetable.tue[6]={subject:"",teacher:""};
-        timetable.wed[6]={subject:"書道",teacher:"松本貴"};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"",teacher:""};
-        gay=3;
-    }else if (socialChoice === "arcCmp"){
-        timetable.mon[6]={subject:"",teacher:""};
-        timetable.tue[6]={subject:"",teacher:""};
-        timetable.wed[6]={subject:"",teacher:""};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"作曲",teacher:"近藤"};
-        gay=5;
-    }else if (socialChoice === "arcArt"){
-        timetable.mon[6]={subject:"",teacher:""};
-        timetable.tue[6]={subject:"",teacher:""};
-        timetable.wed[6]={subject:"",teacher:""};
-        timetable.thu[6]={subject:"",teacher:""};
-        timetable.fri[6]={subject:"美術",teacher:"大友"};
-        gay=5;
-    };
-};
 
 // ページ読み込み時、保存されていれば初期選択状態に反映
 window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('scienceChoice')) {
-        document.getElementById('scienceChoice').value = localStorage.getItem('scienceChoice');
-    }
-    if (localStorage.getItem('socialChoice')) {
-        document.getElementById('socialChoice').value = localStorage.getItem('socialChoice');
-    }
-    changeTimetable();
+    const preset = localStorage.getItem('timetablePreset') || '1-2';
+    LoadPreset();
     UpdateTable();
     UpdateText();
 });
 
-
-//初回保存用
-window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('scienceChoice') === null) {
-        localStorage.setItem('scienceChoice', 'sccPhyBio1'); // 初期値を設定
+async function LoadPreset() {
+    document.getElementById("classChoice").innerHTML = "";
+    for (let i = 1; i <= 8; i++) {
+        document.getElementById("classChoice").innerHTML += `<option value="${i}">${i}組</option>`;
     }
-    if (localStorage.getItem('socialChoice') === null) {
-        localStorage.setItem('socialChoice', 'socJapanese'); // 初期値を設定
-    }
-});
-
-// 選択されたら保存
-document.getElementById('scienceChoice').addEventListener('change', function () {
-    localStorage.setItem('scienceChoice', this.value);
-    changeTimetable();
+    const preset = localStorage.getItem('timetablePreset') || '2';
+    document.getElementById("classChoice").value = preset;
+    const response = await fetch(`timetables/${preset}.json`);
+    const data = await response.json();
+    timetable = data;
     UpdateTable();
     UpdateText();
-});
-document.getElementById('socialChoice').addEventListener('change', function () {
-    localStorage.setItem('socialChoice', this.value);
-    changeTimetable();
-    UpdateTable();
-    UpdateText();
-});
+}
 
-//時間割のアップデート
+function SavePreset() {
+    const selectedPreset = document.getElementById('classChoice').value;
+    localStorage.setItem('timetablePreset', selectedPreset);
+    LoadPreset();
+}
+
 function UpdateTable() {
     const dayKeys = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
@@ -248,7 +158,6 @@ function UpdateTable() {
             if (cell) {
                 const mainInfo = cell.querySelector('.main-info');
                 const subInfo = cell.querySelector('.sub-info');
-
                 mainInfo.textContent = cellData.subject;
                 subInfo.textContent = cellData.teacher;
             }
@@ -256,8 +165,8 @@ function UpdateTable() {
     });
 }
 
+document.getElementById('classChoice').addEventListener('change', SavePreset);
 
-//時間割を反映
 document.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('timetable');
     const table = document.createElement('table');
@@ -393,7 +302,6 @@ function GetCurrentSubject() {
             result = 'rest';
         }
     } else {
-        // 日曜日（または他の条件に当てはまらない場合）
         result = 'rest';
     }
     const cell = document.getElementById(result);
