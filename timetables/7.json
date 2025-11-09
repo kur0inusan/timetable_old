@@ -18,7 +18,7 @@
   "wed": [
     { "subject": "生物", "teacher": "山内" },
     { "subject": "世界史", "teacher": "村島" },
-    { "subject": "政経史", "teacher": "小林" },
+    { "subject": "政経史", "teacher": "小林俊" },
     { "subject": "数学β", "teacher": "田中" },
     { "subject": "理科選択", "teacher": "" },
     { "subject": "古文", "teacher": "矢口" }
@@ -37,7 +37,7 @@
     { "subject": "英語", "teacher": "熊野" },
     { "subject": "数学α", "teacher": "塩崎" },
     { "subject": "英語2", "teacher": "平田" },
-    { "subject": "政経史", "teacher": "小林" }
+    { "subject": "政経史", "teacher": "小林俊" }
   ],
   "sat": [
     { "subject": "情報", "teacher": "喜古" },
