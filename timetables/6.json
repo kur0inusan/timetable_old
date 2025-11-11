@@ -16,7 +16,7 @@
         {"subject": "理科選択", "teacher": ""}
     ],
     "wed": [
-        {"subject": "情報", "teacher": "喜古"},
+        {"subject": "体育", "teacher": "高橋正"},
         {"subject": "社会選択", "teacher": ""},
         {"subject": "理科選択", "teacher": ""},
         {"subject": "理科選択", "teacher": ""},
@@ -33,7 +33,7 @@
     ],
     "fri": [
         {"subject": "英語2", "teacher": "平田"},
-        {"subject": "体育", "teacher": "高橋正"},
+        {"subject": "情報", "teacher": "喜古"},
         {"subject": "現代文", "teacher": "福島"},
         {"subject": "地理", "teacher": "阿部"},
         {"subject": "英語1", "teacher": "庄司"},

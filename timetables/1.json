@@ -16,9 +16,9 @@
         {"subject": "英語2","teacher": "平田"}
     ],
     "wed": [
-        {"subject": "体育","teacher": "高橋正"},
-        {"subject": "化学","teacher": "小松"},
         {"subject": "数学α","teacher": "松野"},
+        {"subject": "化学","teacher": "小松"},
+        {"subject": "情報","teacher": "喜古"},
         {"subject": "数学β","teacher": "木部"},
         {"subject": "理科選択","teacher": ""},
         {"subject": "英語1","teacher": "庄司"}
@@ -32,9 +32,9 @@
         {"subject": "漢文","teacher": "水谷"}
     ],
     "fri": [
-        {"subject": "日本史","teacher": "石附"},
+        {"subject": "体育","teacher": "高橋正"},
         {"subject": "物理","teacher": "深町"},
-        {"subject": "情報","teacher": "喜古"},
+        {"subject": "日本史","teacher": "石附"},
         {"subject": "現代文","teacher": "福島"},
         {"subject": "政経史","teacher": "小林俊"},
         {"subject": "英語","teacher": "熊野"}

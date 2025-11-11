@@ -33,8 +33,8 @@
     ],
     "fri": [
         {"subject": "数学α", "teacher": "塩崎"},
-        {"subject": "化学", "teacher": "小松"},
         {"subject": "体育", "teacher": "高橋正"},
+        {"subject": "化学", "teacher": "小松"},
         {"subject": "社会選択", "teacher": ""},
         {"subject": "地理", "teacher": "阿部"},
         {"subject": "英語1", "teacher": "庄司"}

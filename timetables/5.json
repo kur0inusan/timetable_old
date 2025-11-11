@@ -17,7 +17,7 @@
     ],
     "wed": [
         {"subject": "政経史", "teacher": "内村"},
-        {"subject": "情報", "teacher": "喜古"},
+        {"subject": "体育", "teacher": "高橋正"},
         {"subject": "理科選択", "teacher": ""},
         {"subject": "理科選択", "teacher": ""},
         {"subject": "化学", "teacher": "小松"},
@@ -32,7 +32,7 @@
         {"subject": "英語2", "teacher": "平田"}
     ],
     "fri": [
-        {"subject": "体育", "teacher": "高橋正"},
+        {"subject": "情報", "teacher": "喜古"},
         {"subject": "英語2", "teacher": "平田"},
         {"subject": "地理", "teacher": "阿部"},
         {"subject": "英語1", "teacher": "庄司"},
