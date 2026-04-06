@@ -1,50 +1,50 @@
 {
     "mon": [
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""}
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""}
     ],
     "tue": [
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""}
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""}
     ],
     "wed": [
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""}
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""}
     ],
     "thu": [
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""}
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""}
     ],
     "fri": [
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""}
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""}
     ],
     "sat": [
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""},
-        {"subject": "","teacher": ""}
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""},
+        {"subject": ""}
     ]
 }

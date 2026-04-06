@@ -50,52 +50,52 @@ const schedules = {
 
 let timetable = {
     mon: [
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
     ],
     tue: [
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
     ],
     wed: [
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
     ],
     thu: [
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
     ],
     fri: [
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
     ],
     sat: [
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
-        { subject: "", teacher: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
+        { subject: "" },
     ]
 };
 
@@ -157,9 +157,7 @@ function UpdateTable() {
 
             if (cell) {
                 const mainInfo = cell.querySelector('.main-info');
-                const subInfo = cell.querySelector('.sub-info');
                 mainInfo.textContent = cellData.subject;
-                subInfo.textContent = cellData.teacher;
             }
         });
     });
@@ -206,12 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
             divMain.className = 'main-info';
             divMain.textContent = cellData.subject;
 
-            const divSub = document.createElement('div');
-            divSub.className = 'sub-info';
-            divSub.textContent = cellData.teacher;
-
             td.appendChild(divMain);
-            td.appendChild(divSub);
             row.appendChild(td);
         });
 
@@ -320,12 +313,11 @@ function GetCurrentSubject() {
 
     // cell内のmain-infoクラスのテキストを取得（メイン情報）
     const mainInfo = cell.querySelector('.main-info');
-    const subInfo = cell.querySelector(".sub-info");
     if (mainInfo) {
-        if(mainInfo.textContent.trim()===""){
+        if (mainInfo.textContent.trim() === "") {
             return "放課後";
         }
-        return String(mainInfo.textContent.trim()) + "(" + String(subInfo.textContent.trim() + ")");
+        return mainInfo.textContent.trim();
     }
 };
 
@@ -353,12 +345,11 @@ function GetNextSubject() {
                 return "HR";
             }
             const mainInfo = cell.querySelector('.main-info');
-            const subInfo = cell.querySelector(".sub-info");
-            if(mainInfo.textContent.trim()===""){
+            if (mainInfo.textContent.trim() === "") {
                 return "放課後";
             }
             if (mainInfo) {
-                return String(mainInfo.textContent.trim()) + "(" + String(subInfo.textContent.trim() + ")");
+                return mainInfo.textContent.trim();
             }
         }
     }

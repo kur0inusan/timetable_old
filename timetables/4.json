@@ -1,50 +1,50 @@
 {
     "mon": [
-        {"subject": "数学α", "teacher": ""},
-        {"subject": "数学β", "teacher": ""},
-        {"subject": "英語1", "teacher": ""},
-        {"subject": "体育(高)", "teacher": ""},
-        {"subject": "理科選択", "teacher": ""},
-        {"subject": "古文", "teacher": ""}
+        {"subject": "数学α"},
+        {"subject": "数学β"},
+        {"subject": "英語1"},
+        {"subject": "体育(高)"},
+        {"subject": "理科選択"},
+        {"subject": "古文"}
     ],
     "tue": [
-        {"subject": "数学β", "teacher": ""},
-        {"subject": "化学", "teacher": ""},
-        {"subject": "地理", "teacher": ""},
-        {"subject": "現代文", "teacher": ""},
-        {"subject": "漢文", "teacher": ""},
-        {"subject": "理科選択", "teacher": ""}
+        {"subject": "数学β"},
+        {"subject": "化学"},
+        {"subject": "地理"},
+        {"subject": "現代文"},
+        {"subject": "漢文"},
+        {"subject": "理科選択"}
     ],
     "wed": [
-        {"subject": "歴史選択", "teacher": ""},
-        {"subject": "英語", "teacher": ""},
-        {"subject": "倫理", "teacher": ""},
-        {"subject": "英語2", "teacher": ""},
-        {"subject": "理科選択", "teacher": ""},
-        {"subject": "数学α", "teacher": ""}
+        {"subject": "歴史選択"},
+        {"subject": "英語"},
+        {"subject": "倫理"},
+        {"subject": "英語2"},
+        {"subject": "理科選択"},
+        {"subject": "数学α"}
     ],
     "thu": [
-        {"subject": "古文", "teacher": ""},
-        {"subject": "体育(池)", "teacher": ""},
-        {"subject": "数学β", "teacher": ""},
-        {"subject": "保健", "teacher": ""},
-        {"subject": "有機化学", "teacher": ""},
-        {"subject": "数学α", "teacher": ""}
+        {"subject": "古文"},
+        {"subject": "体育(池)"},
+        {"subject": "数学β"},
+        {"subject": "保健"},
+        {"subject": "有機化学"},
+        {"subject": "数学α"}
     ],
     "fri": [
-        {"subject": "体育", "teacher": ""},
-        {"subject": "英語2", "teacher": ""},
-        {"subject": "歴史選択", "teacher": ""},
-        {"subject": "倫理", "teacher": ""},
-        {"subject": "化学", "teacher": ""},
-        {"subject": "英語1", "teacher": ""}
+        {"subject": "体育"},
+        {"subject": "英語2"},
+        {"subject": "歴史選択"},
+        {"subject": "倫理"},
+        {"subject": "化学"},
+        {"subject": "英語1"}
     ],
     "sat": [
-        {"subject": "英語", "teacher": ""},
-        {"subject": "家庭科", "teacher": ""},
-        {"subject": "数学α", "teacher": ""},
-        {"subject": "現代文", "teacher": ""},
-        {"subject": "", "teacher": ""},
-        {"subject": "", "teacher": ""}
+        {"subject": "英語"},
+        {"subject": "家庭科"},
+        {"subject": "数学α"},
+        {"subject": "現代文"},
+        {"subject": ""},
+        {"subject": ""}
     ]
 }
