@@ -50,50 +50,50 @@ const schedules = {
 
 let timetable = {
     mon: [
-        { subject: "数学α", teacher: "松野" },
-        { subject: "物理", teacher: "深町" },
-        { subject: "現代文", teacher: "福島" },
-        { subject: "日本史", teacher: "石附" },
-        { subject: "古文", teacher: "矢口" },
-        { subject: "数学β", teacher: "木部" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
     ],
     tue: [
-        { subject: "世界史", teacher: "村島" },
-        { subject: "古文", teacher: "矢口" },
-        { subject: "地学", teacher: "石川" },
-        { subject: "英語2", teacher: "平田" },
-        { subject: "漢文", teacher: "水谷" },
-        { subject: "数学α", teacher: "松野" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
     ],
     wed: [
-        { subject: "化学", teacher: "小松" },
-        { subject: "数学α", teacher: "松野" },
-        { subject: "数学β", teacher: "木部" },
-        { subject: "情報", teacher: "喜古" },
-        { subject: "英語1", teacher: "庄司" },
-        { subject: "地学", teacher: "石川" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
     ],
     thu: [
-        { subject: "地理", teacher: "阿部" },
-        { subject: "英語2", teacher: "平田" },
-        { subject: "保健", teacher: "青木" },
-        { subject: "英語", teacher: "Mr.S" },
-        { subject: "情報", teacher: "喜古" },
-        { subject: "数学β", teacher: "木部" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
     ],
     fri: [
-        { subject: "世界史", teacher: "村島" },
-        { subject: "日本史", teacher: "石附" },
-        { subject: "体育", teacher: "髙橋正" },
-        { subject: "化学", teacher: "小松" },
-        { subject: "英語", teacher: "熊野" },
-        { subject: "現代文", teacher: "福島" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
     ],
     sat: [
-        { subject: "地理", teacher: "阿部" },
-        { subject: "物理", teacher: "深町" },
-        { subject: "体育", teacher: "髙橋正" },
-        { subject: "英語1", teacher: "庄司" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
+        { subject: "", teacher: "" },
         { subject: "", teacher: "" },
         { subject: "", teacher: "" },
     ]
@@ -121,7 +121,7 @@ function updateDateTime() {
 
 // ページ読み込み時、保存されていれば初期選択状態に反映
 window.addEventListener('DOMContentLoaded', () => {
-    const preset = localStorage.getItem('timetablePreset') || '1-2';
+    const preset = localStorage.getItem('timetablePreset') || '1';
     LoadPreset();
     UpdateTable();
     UpdateText();
@@ -132,7 +132,7 @@ async function LoadPreset() {
     for (let i = 1; i <= 8; i++) {
         document.getElementById("classChoice").innerHTML += `<option value="${i}">${i}組</option>`;
     }
-    const preset = localStorage.getItem('timetablePreset') || '2';
+    const preset = localStorage.getItem('timetablePreset') || '1';
     document.getElementById("classChoice").value = preset;
     const response = await fetch(`timetables/${preset}.json`);
     const data = await response.json();

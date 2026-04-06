@@ -1,49 +1,49 @@
 {
     "mon": [
-        {"subject": "数学β", "teacher": "田中"},
-        {"subject": "保健", "teacher": "青木"},
-        {"subject": "物理", "teacher": "深町"},
-        {"subject": "情報", "teacher": "喜古"},
-        {"subject": "社会選択", "teacher": ""},
-        {"subject": "現代文", "teacher": "福島"}
+        {"subject": "数学α", "teacher": ""},
+        {"subject": "数学β", "teacher": ""},
+        {"subject": "英語1", "teacher": ""},
+        {"subject": "体育(高)", "teacher": ""},
+        {"subject": "理科選択", "teacher": ""},
+        {"subject": "古文", "teacher": ""}
     ],
     "tue": [
-        {"subject": "化学", "teacher": "小松"},
-        {"subject": "英語", "teacher": "Mr.S"},
-        {"subject": "数学α", "teacher": "塩崎"},
-        {"subject": "体育", "teacher": "高橋正"},
-        {"subject": "英語", "teacher": "熊野"},
-        {"subject": "世界史", "teacher": "村島"}
+        {"subject": "数学β", "teacher": ""},
+        {"subject": "化学", "teacher": ""},
+        {"subject": "地理", "teacher": ""},
+        {"subject": "現代文", "teacher": ""},
+        {"subject": "漢文", "teacher": ""},
+        {"subject": "理科選択", "teacher": ""}
     ],
     "wed": [
-        {"subject": "生物", "teacher": "奥山"},
-        {"subject": "数学β", "teacher": "田中"},
-        {"subject": "世界史", "teacher": "村島"},
-        {"subject": "英語1", "teacher": "庄司"},
-        {"subject": "英語2", "teacher": "平田"},
-        {"subject": "現代文", "teacher": "福島"}
+        {"subject": "歴史選択", "teacher": ""},
+        {"subject": "英語", "teacher": ""},
+        {"subject": "倫理", "teacher": ""},
+        {"subject": "英語2", "teacher": ""},
+        {"subject": "理科選択", "teacher": ""},
+        {"subject": "数学α", "teacher": ""}
     ],
     "thu": [
-        {"subject": "生物", "teacher": "山内"},
-        {"subject": "数学α", "teacher": "塩崎"},
-        {"subject": "漢文", "teacher": "水谷"},
-        {"subject": "数学β", "teacher": "田中"},
-        {"subject": "地理", "teacher": "阿部"},
-        {"subject": "古文", "teacher": "矢口"}
+        {"subject": "古文", "teacher": ""},
+        {"subject": "体育(池)", "teacher": ""},
+        {"subject": "数学β", "teacher": ""},
+        {"subject": "保健", "teacher": ""},
+        {"subject": "有機化学", "teacher": ""},
+        {"subject": "数学α", "teacher": ""}
     ],
     "fri": [
-        {"subject": "数学α", "teacher": "塩崎"},
-        {"subject": "化学", "teacher": "小松"},
-        {"subject": "体育", "teacher": "高橋正"},
-        {"subject": "社会選択", "teacher": ""},
-        {"subject": "地理", "teacher": "阿部"},
-        {"subject": "英語1", "teacher": "庄司"}
+        {"subject": "体育", "teacher": ""},
+        {"subject": "英語2", "teacher": ""},
+        {"subject": "歴史選択", "teacher": ""},
+        {"subject": "倫理", "teacher": ""},
+        {"subject": "化学", "teacher": ""},
+        {"subject": "英語1", "teacher": ""}
     ],
     "sat": [
-        {"subject": "物理", "teacher": "深町"},
-        {"subject": "英語2", "teacher": "平田"},
-        {"subject": "古文", "teacher": "矢口"},
-        {"subject": "情報", "teacher": "喜古"},
+        {"subject": "英語", "teacher": ""},
+        {"subject": "家庭科", "teacher": ""},
+        {"subject": "数学α", "teacher": ""},
+        {"subject": "現代文", "teacher": ""},
         {"subject": "", "teacher": ""},
         {"subject": "", "teacher": ""}
     ]
